@@ -22,11 +22,10 @@ class Bereaucrat
         void        decrementGrade(void);
     
     private:
-        std::string const _name;
-        std::string const _grade;
+        std::string name;
+        std::string grade;
 };
 
-std::ostream &operator<<(std::ostream &stream, const Bereaucrat &source);
-
+std::ostream &operator<<(std::ostream &stream, Bereaucrat &source);
 
 #endif

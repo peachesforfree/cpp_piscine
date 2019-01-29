@@ -17,12 +17,12 @@ Bereaucrat::~Bereaucrat() {}
 
 Bereaucrat::Bereaucrat(const Bereaucrat &source)
 {
-    this->_name = source._name;
-    this->_grade = source._grade;
+    this->name = source.name;
+    this->grade = source.grade;
 }
 
-std::ostream &operator<<(std::ostream &stream, const Bereaucrat &source)
+std::ostream &operator<<(std::ostream &stream, Bereaucrat &source)
 {
-    stream << _name << ", bureaucrat" << _grade << ".\n";
+    stream << source.getName()  + ", bureaucrat" << source.getGrade() << ".\n";
     return (stream);
 }
